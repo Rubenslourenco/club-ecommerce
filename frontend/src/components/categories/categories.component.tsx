@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import CategoryItem from "../category-item/category-item-component";
+
 import Category from "../../types/category.types";
 import env from "../../config/env.config";
 
 import "./categories.styles.css";
-import { log } from "console";
 
-const Categories = () => {
+function Categories() {
   const [categories, setCategories] = useState<Category[]>([]);
 
   const fetchCategories = async () => {
@@ -28,9 +29,16 @@ const Categories = () => {
 
   return (
     <div className="categories-container">
-      <div className="categories-content"></div>
+      <div className="categories-content">
+        {categories.map((category) => (
+          <div>
+            {/* key={category.id} */}
+            <CategoryItem category={category} />
+          </div>
+        ))}
+      </div>
     </div>
   );
-};
+}
 
 export default Categories;
