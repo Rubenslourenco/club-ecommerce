@@ -1,8 +1,11 @@
+import Product from "./product.types";
+
 interface Category {
-  id: String;
-  name: String;
-  displayname: String;
-  imageUrl: String;
+  id: string;
+  name: string;
+  displayName: string;
+  imageUrl: string;
+  products: Product[];
 }
 
 export default Category;
