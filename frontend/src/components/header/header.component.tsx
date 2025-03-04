@@ -1,4 +1,7 @@
+import { BsCart3 } from "react-icons/bs";
+
 import "./header.styles.css";
+
 const Header = () => {
   return (
     <div className="header-container">
@@ -9,7 +12,7 @@ const Header = () => {
         <div className="header-item">Login</div>
         <div className="header-item">Criar Conta</div>
         <div className="header-item">
-          Carrinho
+          <BsCart3 size={25} />
           <p style={{ marginLeft: 5 }}>5</p>
         </div>
       </div>
