@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Colors from "../../theme/theme.colors";
-import { title } from "process";
 
 export const HeaderContainer = styled.div`
   width: 100%;
