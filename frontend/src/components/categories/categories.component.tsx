@@ -5,7 +5,6 @@ import CategoryItem from "../category-item/category-item-component";
 
 import Category from "../../types/category.types";
 
-import "./categories.styles.css";
 import { collection } from "firebase/firestore";
 import { db } from "../../config/firestore.config";
 import { categoryConverter } from "../../converters/firebase.converters";
