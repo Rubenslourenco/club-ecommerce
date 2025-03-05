@@ -9,6 +9,7 @@ import "./categories.styles.css";
 import { collection } from "firebase/firestore";
 import { db } from "../../config/firestore.config";
 import { categoryConverter } from "../../converters/firebase.converters";
+import { CategoriesContainer, CategoriesContent } from "./categories.styles";
 
 function Categories() {
   const [categories, setCategories] = useState<Category[]>([]);
@@ -38,15 +39,15 @@ function Categories() {
   }, []);
 
   return (
-    <div className="categories-container">
-      <div className="categories-content">
+    <CategoriesContainer>
+      <CategoriesContent>
         {categories.map((category) => (
           <div key={category.id}>
             <CategoryItem category={category} />
           </div>
         ))}
-      </div>
-    </div>
+      </CategoriesContent>
+    </CategoriesContainer>
   );
 }
 
