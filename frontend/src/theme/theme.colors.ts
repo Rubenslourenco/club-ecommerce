@@ -1,10 +1,8 @@
-import { error } from "console";
-
 const Colors = {
   primary: "#212529",
   text: {
     white: "#F8F9FA",
-    black: "#343A40",
+    dark: "#343A40",
   },
   background: {
     dark: "#212529",
@@ -14,8 +12,8 @@ const Colors = {
     background: "#E9ECEF",
     placeholder: "#6C757D",
   },
-
   error: "#FF6A6A",
+  success: "#198754",
 };
 
 export default Colors;
