@@ -16,12 +16,17 @@ import {
 import CustomInput from "../../components/custom-input/custom-input.component";
 import InputErrorMessage from "../../components/input -error-message/input-erro-message.component";
 
+interface LoginForm {
+  email: string;
+  password: string;
+}
+
 const LoginPage = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm<LoginForm>();
 
   const handleSubmitPress = (data: any) => {
     console.log({ data });
