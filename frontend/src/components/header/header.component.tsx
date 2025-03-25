@@ -7,7 +7,6 @@ import {
   HeaderItems,
   HeaderItem,
 } from "./header.styles";
-import { sign } from "crypto";
 import { auth } from "../../config/firestore.config";
 import { signOut } from "firebase/auth";
 
